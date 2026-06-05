@@ -1,0 +1,13 @@
+services:
+
+  backend:
+    image: backend-servlet
+    ports:
+      - "8080:8080"
+
+  frontend:
+    image: frontend-react
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
