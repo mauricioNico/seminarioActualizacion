@@ -19,7 +19,7 @@ function App() {
   const guardarAlumno = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:8080/backend-servlet/api/alumnos", {
+    fetch("/backend-servlet/api/alumnos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
